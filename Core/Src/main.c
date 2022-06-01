@@ -110,9 +110,7 @@ int main(void)
     {
       //Press the button
       HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, GPIO_PIN_SET);
-      // HAL_TIM_PWM_Stop(&htim1, TIM_CHANNEL_1);
       __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, 10000);
-      // HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
 
     }
     HAL_Delay(2);
